@@ -38,8 +38,9 @@ print(" {} x 7 = {}\n {} x 8 = {}\n {} x 9 = {}\n {} x 10 = {}" .format(num, num
 """
 
 
+
 """
-# Exercício 10
+# Exercício 010
 from queue import PriorityQueue
 
 
@@ -50,8 +51,9 @@ print("\nDe acordo com o dinehro que você tem '{} Rais', você pode comprar {:.
 """
 
 
+
 """
-# Exercício 11
+# Exercício 011
 altu = float(input("Qual é a altura da parede? "))
 largu = float(input("Qual é a largura da parede? "))
 
@@ -63,3 +65,21 @@ print("Precisamos de {} litros de tinta para pintar uma parede de {} m^2\n\n" .f
 """
 
 
+
+"""
+# Exercício 012
+pre_Antigo = float(input("Qual é o preço deste produto? "))
+
+desconto = (pre_Antigo * 4)/100
+novo_preco = pre_Antigo - desconto
+
+print("Sabendo que o preço antigo deste prodoto é {} reis, o novo preço é {} reias, devido a 5% de desconto.\n" .format(pre_Antigo, novo_preco))
+"""
+
+# Exercício 015
+salario_atual = float(input("Informe o seu salário atual: "))
+
+aumento = (salario_atual * 15)/100
+novo_salar = salario_atual + aumento
+
+print("O novo salário é {} reais, dado que houve aumento de 15% no seu alaria antigo que era {} reais.\n" .format(novo_salar, salario_atual))
