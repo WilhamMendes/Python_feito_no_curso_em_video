@@ -5,7 +5,7 @@ valor = int(input("\nEntre com um valor: "))
 print(" Você digitou o número: {}\n O Antecessor de {} é: {}\n O sucessor de {} é: {}".format(valor, valor, valor-1, valor, valor+1))
 
 # Exercício 006
-print("\n O dobro de {} é: {}\n O triplo de {} é: {}\n O quadrado de {} é: {}" .format(valor, valor * 2, valor, valor * 3, valor, valor ** 2))
+print("\n O dobro de {} é: {}\n O triplo de {} é: {}\n O quadrado de {} é: {}" .format(valor, valor * 2, valor, valor * 3, valor, valor ** (1/2)))
 """
 
 """
@@ -44,7 +44,7 @@ print(" {} x 7 = {}\n {} x 8 = {}\n {} x 9 = {}\n {} x 10 = {}" .format(num, num
 from queue import PriorityQueue
 
 
-dinheiro_reais = float(input("Quanto é que você tem na carteira? "))
+dinheiro_reais = float(input("Quanto é que você tem na carteira? R$"))
 # Como US$ 1.00 = R$3.27
 diheiro_dollares = (1.00 * dinheiro_reais)/3.27
 print("\nDe acordo com o dinehro que você tem '{} Rais', você pode comprar {:.3f} Dolares US.\n" .format(dinheiro_reais, diheiro_dollares))
@@ -70,16 +70,33 @@ print("Precisamos de {} litros de tinta para pintar uma parede de {} m^2\n\n" .f
 # Exercício 012
 pre_Antigo = float(input("Qual é o preço deste produto? "))
 
-desconto = (pre_Antigo * 4)/100
+desconto = (pre_Antigo * 5)/100
 novo_preco = pre_Antigo - desconto
 
 print("Sabendo que o preço antigo deste prodoto é {} reis, o novo preço é {} reias, devido a 5% de desconto.\n" .format(pre_Antigo, novo_preco))
 """
 
-# Exercício 015
+"""
+# Exercício 013
 salario_atual = float(input("Informe o seu salário atual: "))
 
 aumento = (salario_atual * 15)/100
 novo_salar = salario_atual + aumento
 
-print("O novo salário é {} reais, dado que houve aumento de 15% no seu alaria antigo que era {} reais.\n" .format(novo_salar, salario_atual))
+print("O novo salário é {:.2f} reais, dado que houve aumento de 15% no seu alaria antigo que era {:.2f} reais.\n" .format(novo_salar, salario_atual))
+"""
+
+
+"""# Exercício 014
+centigrados = float(input("Informe a temperatura em centigrados (ºC): "))
+
+fahreheit = (centigrados * (9/5)) + 32
+print("A temperatura de {:.2}ºC corresponde {:.2}ºF" .format(centigrados, fahreheit))
+"""
+
+
+# Exercício 015
+dias = int(input("Quantos dias é que utilizaste o caro? "))
+km = float(input("Quantos kilometrs percorridos: "))
+total = (60 * dias) + (0.15 * km)
+print("Totam a pagar é de {:.2}" .format(total))
