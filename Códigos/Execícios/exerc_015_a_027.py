@@ -1,4 +1,6 @@
 import math
+from multiprocessing.connection import wait
+from winsound import PlaySound
 
 """
 # Exercício 016
@@ -48,8 +50,7 @@ print("\nEntre os quatro alunos, o escolhido é o/a {}.\n" .format(choice(alunos
 """
 
 
-
-
+"""
 # Exercício 020
 from random import shuffle
 
@@ -65,4 +66,14 @@ print("\nEis a ordem da apresentação dos trabalhos: ")
 
 for aluno in alunos:
     print(aluno)
+"""
+
+
+
+# Exercício 021 - Faça um programa em Python que abra e reproduza o áudio de um arquivo MP3.
+import pygame
+pygame.init()
+pygame.mixer.music.load('music_.mp4')
+pygame.mixer.music.play()
+pygame.event,wait()
 
