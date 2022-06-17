@@ -31,7 +31,7 @@ fras = '      Curso em vídeo Python      '
 print("\n\nQuantidade de pequenos espaços e letras contidas na fras:")
 print(len(fras))
 
-print("\n\nQuantidade de pequenos espaços, sendo que os espaços antes e depois da frase foram eleiminados:")
+print("\n\nQuantidade de pequenos espaços, sendo que os espaços antes e depois da frase foram eliminados:")
 print(len(fras.strip()))
 
 
