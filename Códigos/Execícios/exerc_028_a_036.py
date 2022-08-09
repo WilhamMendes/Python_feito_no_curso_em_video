@@ -76,6 +76,7 @@ else:
     
 
 
+"""
 # Exercício 033
 print("\n\n")
 n1 = int(input("Digite o 1º valor: "))
@@ -98,6 +99,7 @@ elif n3 < n1 and n3 < n2:
     menor = n3
 print("O menor número é {}" .format(menor))
 print("\n\n")
+"""
 
 
 
@@ -114,22 +116,15 @@ else:
     print("O seu salário era {:.2f} reais, você recebeu aumento de 15%, logo o seu novo salário é {:.2f} reais.\n" .format(salario, salario_aumentado))
 """
 
-"""
+
 # Exercício 035
 r1 = float(input("Infrome a mediada da reta 1: "))
 r2 = float(input("Infrome a mediada da reta 2: "))
 r3 = float(input("Infrome a mediada da reta 3: "))
 
 print("\nVerificando se as três reetas podem formar triângulo:")
-if r1 < r3 and r2 < r3 and (r1 + r2) > r3:
-        print("As três reetas podem formar triângulo.")
-
-elif r1 < r2 and r3 < r2 and (r1 + r3) > r2:
-        print("As três retas podem formar triângulo.")
-
-elif r2 < r1 and r3 < r1 and (r2 + r3) > r1:
+if (r2 + r3) > r1 and (r1 + r3) > r2 and (r1 + r2) > r3:
         print("As três retas podem formar triângulo.")
 else:
     print("As três retas NÂO podem formar triângulo.") 
 print("\n\n")
-"""
