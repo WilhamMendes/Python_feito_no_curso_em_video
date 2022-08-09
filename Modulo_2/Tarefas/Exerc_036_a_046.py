@@ -26,5 +26,10 @@ print("***"*20)
 
 num = int(input("Qual é o número que queres converter? "))
 opcoes = int("DIGITE:\n1 Para converter em BNÁRIO\n2 Para converter em OCTAL\n3 Para converter em HEXADECIMAL")
+quociente = num
+vet = []
 
+if opcoes == '1':
+    quociente = quociente // 2
+    resto = quociente % 2
 
